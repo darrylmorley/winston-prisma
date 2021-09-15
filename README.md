@@ -1,4 +1,4 @@
-# winston-prisma
+# winston-prisma-transport
 
 ---
 
@@ -22,8 +22,8 @@ model Log {
 3. Install winston-prisma:
 
 ```
-$ npm install prisma-trasnport
-$ yarn add prisma-transport
+$ npm winston-prisma-transport
+$ yarn add winston-prisma-transport
 ```
 
 4. Usage:
