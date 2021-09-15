@@ -1,0 +1,15 @@
+{
+  "name": "winston-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^3.0.2",
+    "dotenv": "^10.0.0",
+    "winston": "^3.3.3",
+    "winston-transport": "^4.4.0"
+  },
+  "devDependencies": {
+    "prisma": "^3.0.2"
+  }
+}

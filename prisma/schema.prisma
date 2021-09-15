@@ -1,0 +1,65 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Gun {
+  id           String  @id @unique
+  type         String
+  mechanism    String?
+  calibre      String?
+  make         String?
+  model        String?
+  variant      String?
+  origin       String?
+  orientation  String?
+  trigger      String?
+  barrelLength String?
+  stockLength  String?
+  weight       String?
+  choke1       String?
+  choke2       String?
+  scopeMake    String?
+  summary      String?
+  description  String?
+  condition    String?
+  price        Int
+  stockNumber  String?
+  serialNumber String?
+  imageCount   Int
+  images       Json?
+  licence      String?
+  created      String
+  modified     String?
+}
+
+model Log {
+  id    String @id @default(cuid())
+  time  String
+  error String
+  site  String
+  level String
+}
+
+model Product {
+  sku               String
+  description       String
+  category          Json?
+  manufacturer      Json?
+  images            Json?
+  avgCost           String
+  createTime        String
+  customFieldValues Json?
+  defaultCost       String
+  itemECommerce     Json?
+  itemMatrixID      String
+  itemShops         Json
+  manufacturerSku   String
+  prices            Json
+  tax               Boolean
+  id                Int     @id @unique
+}
