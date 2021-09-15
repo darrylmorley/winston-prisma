@@ -30,7 +30,7 @@ $ yarn add winston-prisma-transport
 
 ```
 const { createLogger } = require("winston");
-const PrismaTransport = require("./lib/prisma-transport");
+const PrismaTransport = require("winston-prisma-transport");
 
 const logger = createLogger({
   transports: [
