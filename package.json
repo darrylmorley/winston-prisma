@@ -1,11 +1,26 @@
 {
   "name": "winston-prisma-transport",
   "version": "1.2.0",
-  "main": "index.js",
+  "description": "A Prisma Transport for Winston",
+  "main": "./lib/prisma-transport.js",
+  "keywords": [
+    "winston",
+    "prisma",
+    "logger",
+    "log",
+    "logging",
+    "transport"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darrylmorley/winston-prisma"
+  },
+  "bugs": {
+    "url": "https://github.com/darrylmorley/winston-prisma/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "winston": "^3.3.3",
     "winston-transport": "^4.4.0"
   },
-  "devDependencies": {}
 }
